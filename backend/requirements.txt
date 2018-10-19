@@ -1,0 +1,9 @@
+Django>=2.1
+psycopg2-binary
+requests
+django-cors-headers
+python-dateutil
+cython
+numpy
+matplotlib
+pandas

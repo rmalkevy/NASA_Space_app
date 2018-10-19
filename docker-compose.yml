@@ -1,0 +1,28 @@
+version: "3"
+services:
+
+  backend:
+    build: ${PWD-.}/backend
+    command: python3 manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ${PWD-.}/backend:/code
+    ports:
+      - "8000:8000"
+    environment:
+      TIME_REFRESH: ${TIME_REFRESH}
+
+
+  frontend:
+    build: ${PWD-.}/frontend
+    volumes:
+      - ${PWD-.}/frontend:/usr/src/app
+    environment:
+       API_BASE: "${PATH_BACKEND}"
+       TIME_REFRESH: ${TIME_REFRESH}
+    command: npm run dev
+    ports:
+      - "4000:4000"
+    depends_on:
+      - backend
+
+
