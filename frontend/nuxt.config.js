@@ -9,11 +9,11 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'CCMN',
+    title: 'Enliven',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: "UNIT Factory student's project!"}
+      { hid: 'description', name: 'description', content: "NASA Space App Challenge"}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -38,8 +38,6 @@ module.exports = {
   */
   plugins: [
     '@/plugins/vuetify',
-    { src: '~plugins/vue-highcharts.js', ssr: false },
-    '~/plugins/notifications.js',
   ],
 
   /*
