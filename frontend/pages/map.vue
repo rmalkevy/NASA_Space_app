@@ -13,7 +13,7 @@
         <v-card-media>
           <v-container fill-height fluid id="ContainerMap" class="container ma-0 pa-0">
 
-            <img src="~/Mars_Viking_MDIM21_1km.png" id="Map"/>
+            <img src="/Mars_Viking_MDIM21_1km.png" id="Map"/>
             <div class="Dot" id="Dot" style="left: -20px"></div>
 
           </v-container>
