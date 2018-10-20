@@ -15,6 +15,10 @@ class getData(View):
         self.ferum = list()
         self.retInfo = {}
         self.retInfo["mixed_values"] = list()
+        self.retInfo["gradient"] = {}
+        self.retInfo["gradient"]["min"] = 1;
+        self.retInfo["gradient"]["averange"] = 0;
+        self.retInfo["gradient"]["max"] = 0;
         self.cell = {"latitude": "", "longtitude": "", "value": ""}
         self.max_chlorine = 0.797
         self.max_water = 7.398
@@ -119,6 +123,12 @@ class getData(View):
                                             self.cell_new = copy.deepcopy(self.cell)
                                             self.cell_new["longtitude"] = chlorine["longtitude"]
                                             self.cell_new["latitude"] = chlorine["latitude"]
-                                            self.cell_new["value"] = round(chlorine["value"] + water["value"] + pottasium["value"] + silicon["value"] + ferum["value"], 3)
+                                            self.mixed_value = round(chlorine["value"] + water["value"] + pottasium["value"] + silicon["value"] + ferum["value"], 3)
+                                            self.cell_new["value"] = self.mixed_value;
+                                            if (self.mixed_value > self.retInfo["gradient"]["max"]):
+                                                self.retInfo["gradient"]["max"] = self.mixed_value
+                                            if (self.mixed_value < self.retInfo["gradient"]["min"]):
+                                                self.retInfo["gradient"]["min"] = self.mixed_value                                                
                                             self.retInfo["mixed_values"].append(self.cell_new)
+        self.retInfo["gradient"]["averange"] = round((self.retInfo["gradient"]["min"] + self.retInfo["gradient"]["max"]) / 2, 3)
         return JsonResponse(OrderedDict(self.retInfo))
