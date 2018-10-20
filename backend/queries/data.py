@@ -37,10 +37,8 @@ class getData(View):
                     self.cell_chlorine = copy.deepcopy(self.cell)
                     self.cell_chlorine["longtitude"] = member[0]
                     self.cell_chlorine["latitude"] = member[1]
-                    print(float(member[2]))
                     self.cell_chlorine["value"] = (float(member[2]) / self.max_chlorine) * self.koef_chlorine
                     self.chlorine.append(self.cell_chlorine)
-        print(type(self.chlorine))
         if 'water' in request.GET:
             self.koef_water = float(request.GET['water'])
             with open("h2o_sr_5x5.tab") as f:
@@ -58,7 +56,6 @@ class getData(View):
                     self.cell_water["latitude"] = member[1]
                     self.cell_water["value"] = (float(member[2]) / self.max_water) * self.koef_water
                     self.water.append(self.cell_water)
-        print(type(self.water))
         if 'pottasium' in request.GET:
             self.koef_pottasium = float(request.GET['pottasium'])
             with open("k_sr_5x5.tab") as f:
