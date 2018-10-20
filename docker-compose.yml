@@ -8,8 +8,6 @@ services:
       - ${PWD-.}/backend:/code
     ports:
       - "8000:8000"
-    environment:
-      TIME_REFRESH: ${TIME_REFRESH}
 
 
   frontend:
@@ -17,8 +15,7 @@ services:
     volumes:
       - ${PWD-.}/frontend:/usr/src/app
     environment:
-       API_BASE: "${PATH_BACKEND}"
-       TIME_REFRESH: ${TIME_REFRESH}
+       API_BASE: 'https://www.localhost:8000'
     command: npm run dev
     ports:
       - "4000:4000"
