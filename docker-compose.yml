@@ -9,17 +9,13 @@ services:
     ports:
       - "8000:8000"
 
-
   frontend:
     build: ${PWD-.}/frontend
     volumes:
-      - ${PWD-.}/frontend:/usr/src/app
+      - ${PWD-.}/frontend/dist/:/usr/share/nginx/html
     environment:
-       API_BASE: 'https://www.localhost:8000'
-    command: npm run dev
+      NODE_ENV: "development"
     ports:
-      - "4000:4000"
+      - "8085:80"
     depends_on:
       - backend
-
-
