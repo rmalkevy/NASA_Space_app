@@ -4,9 +4,15 @@ function parseResponse(response) {
     let gradient = response.data.gradient;
     let length = data.length;
 
+    let value = 0;
     for (let i = 0; i < length; i++) {
-        points.push([parseFloat(data[i].latitude), parseFloat(data[i].longtitude), data[i].value])
+        if (data[i].value >= gradient.min && data[i].value <= gradient.averange) {
+            value = data[i].value * 100;
+        } else {
+            value = data[i].value * 500;
+        }
+        points.push([parseFloat(data[i].latitude), parseFloat(data[i].longtitude), value.toString()]);
+        console.log('value' + data[i].value);
     }
-    alert(points);
     return { gradient: gradient, points: points};
 }

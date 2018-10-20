@@ -13,6 +13,7 @@ L.HeatLayer = (L.Layer ? L.Layer : L.Class).extend({
     initialize: function (latlngs, options) {
         this._latlngs = latlngs;
         L.setOptions(this, options);
+
     },
 
     setLatLngs: function (latlngs) {

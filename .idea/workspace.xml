@@ -2,34 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df3f725c-6168-40f4-8142-bdf6d50ce50e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/conf/nginx.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/dist/demo/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/dist/dist/leaflet-heat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/dist/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/dist/src/HeatLayer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/dist/src/ParseResponse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/dist/src/Requests.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.eslintrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/assets/roadster.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/components/Footer.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/components/ToolBar.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/layouts/default.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/nuxt.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/pages/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/plugins/heatmap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/plugins/vuetify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/static/map_Mars.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/static/roadster.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/store/map.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/queries/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/queries/data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/dist/demo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/dist/demo/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/dist/src/HeatLayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/dist/src/HeatLayer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/dist/src/ParseResponse.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/dist/src/ParseResponse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/dist/src/Requests.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/dist/src/Requests.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,11 +18,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/dist/demo/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="51" column="22" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
+            <state relative-caret-position="348">
+              <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
               <folding>
                 <element signature="e#0#6#0" expanded="true" />
               </folding>
@@ -55,17 +42,43 @@
       <file leaf-file-name="ParseResponse.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/dist/src/ParseResponse.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+            <state relative-caret-position="165">
+              <caret line="11" column="40" lean-forward="true" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Requests.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HeatLayer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/dist/src/HeatLayer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="651">
+              <caret line="209" column="3" lean-forward="true" selection-start-line="209" selection-start-column="3" selection-end-line="209" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/queries/views.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="data.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/queries/data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="132" column="127" selection-start-line="132" selection-start-column="127" selection-end-line="132" selection-end-column="127" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Requests.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/dist/src/Requests.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+            <state>
+              <caret column="121" lean-forward="true" selection-start-column="121" selection-end-column="121" />
             </state>
           </provider>
         </entry>
@@ -84,9 +97,17 @@
     <findStrings>
       <find>maplayout</find>
       <find>addressPoints</find>
+      <find>points</find>
+      <find>heatl</find>
+      <find>heat</find>
+      <find>round</find>
+      <find>HeatLayer</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/frontend</dir>
+      <dir>$PROJECT_DIR$/</dir>
+      <dir>$PROJECT_DIR$/frontend/dist/src</dir>
+      <dir>$PROJECT_DIR$/frontend/dist</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -105,9 +126,11 @@
         <option value="$PROJECT_DIR$/frontend/index.html" />
         <option value="$PROJECT_DIR$/frontend/Dockerfile" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
-        <option value="$PROJECT_DIR$/frontend/dist/src/Requests.js" />
+        <option value="$PROJECT_DIR$/backend/queries/data.py" />
+        <option value="$PROJECT_DIR$/frontend/dist/src/HeatLayer.js" />
         <option value="$PROJECT_DIR$/frontend/dist/src/ParseResponse.js" />
         <option value="$PROJECT_DIR$/frontend/dist/demo/index.html" />
+        <option value="$PROJECT_DIR$/frontend/dist/src/Requests.js" />
       </list>
     </option>
   </component>
@@ -140,17 +163,6 @@
             <path>
               <item name="NASA_ENLIVEN" type="b2602c69:ProjectViewProjectNode" />
               <item name="NASA_ENLIVEN" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NASA_ENLIVEN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NASA_ENLIVEN" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="queries" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NASA_ENLIVEN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NASA_ENLIVEN" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -165,6 +177,13 @@
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="dist" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NASA_ENLIVEN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NASA_ENLIVEN" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NASA_ENLIVEN" type="b2602c69:ProjectViewProjectNode" />
@@ -233,8 +252,8 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.25241378" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.32965517" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.24965517" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16882068" />
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="right" id="Database" order="3" />
@@ -332,13 +351,6 @@
     <entry file="file://$PROJECT_DIR$/backend/Dockerfile">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
@@ -353,27 +365,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/dist/src/Requests.js">
+    <entry file="file://$PROJECT_DIR$/frontend/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        <state relative-caret-position="105">
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/dist/dist/leaflet-heat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="285" lean-forward="true" selection-start-column="285" selection-end-column="334" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/queries/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="132" column="127" selection-start-line="132" selection-start-column="127" selection-end-line="132" selection-end-column="127" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/queries/views.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/dist/src/ParseResponse.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        <state relative-caret-position="165">
+          <caret line="11" column="40" lean-forward="true" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/dist/src/HeatLayer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="209" column="3" lean-forward="true" selection-start-line="209" selection-start-column="3" selection-end-line="209" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/dist/demo/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="51" column="22" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
+        <state relative-caret-position="348">
+          <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
           <folding>
             <element signature="e#0#6#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/dist/src/Requests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="121" lean-forward="true" selection-start-column="121" selection-end-column="121" />
         </state>
       </provider>
     </entry>

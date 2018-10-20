@@ -32,25 +32,40 @@
         let response = await makeRequest();
         let result = await parseResponse(response);
 
-        var map = L.map('map').setView([-37.87, 175.475], 12);
+        // var map = L.map('map').setView([0, 180], 2);
+        var map = L.map('map', {
+            center: [0, 180],
+            zoom: 2,
+            // zoomControl: false
+        })
 
         var tiles = L.tileLayer('https://cartocdn-gusc.global.ssl.fastly.net/opmbuilder/api/v1/map/named/opm-mars-basemap-v0-1/all/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://github.com/openplanetary/opm">OpenPlanetary</a> contributors',
         }).addTo(map);
 
-        let red = result.gradient.min;
         let blue = result.gradient.averange;
         let lime = result.gradient.max;
+        let red = result.gradient.min;
         let dict = {};
-        dict[red.toString()] = 'red';
+
         dict[blue.toString()] = 'blue';
         dict[lime.toString()] = 'lime';
+        dict[red.toString()] = 'red';
+
         let options = {
-            gradient: dict,
-            radius: 50,
-            max: result.gradient.max,
-            minOpacity:
+            // gradient: dict,
+            minOpacity: 0.05,
+            radius: 40,
+
         };
+        // options: {
+    //     minOpacity: 0.05,
+    //     maxZoom: 18,
+    //     radius: 25,
+    //     blur: 15,
+    //     max: 1.0
+    // },
+        let addressPoints = result.points.map(function (p) { return [p[0], p[1]]; });
         let heat = L.heatLayer(result.points, options).addTo(map);
     };
 </script>

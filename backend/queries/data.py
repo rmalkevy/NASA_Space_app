@@ -25,7 +25,7 @@ class getData(View):
         self.max_pottasium = 0.561
         self.max_silicon = 22.113
         self.max_ferum = 19.301
-    def get(self, request): 
+    def get(self, request):
         if 'chlorine' in request.GET:
             self.koef_chlorine = float(request.GET['chlorine'])
             with open("cl_sr_5x5.tab") as f:
@@ -123,12 +123,12 @@ class getData(View):
                                             self.cell_new = copy.deepcopy(self.cell)
                                             self.cell_new["longtitude"] = chlorine["longtitude"]
                                             self.cell_new["latitude"] = chlorine["latitude"]
-                                            self.mixed_value = round(chlorine["value"] + water["value"] + pottasium["value"] + silicon["value"] + ferum["value"], 3)
+                                            self.mixed_value = round(chlorine["value"] + water["value"] + pottasium["value"] + silicon["value"] + ferum["value"], 1)
                                             self.cell_new["value"] = self.mixed_value;
                                             if (self.mixed_value > self.retInfo["gradient"]["max"]):
                                                 self.retInfo["gradient"]["max"] = self.mixed_value
                                             if (self.mixed_value < self.retInfo["gradient"]["min"]):
-                                                self.retInfo["gradient"]["min"] = self.mixed_value                                                
+                                                self.retInfo["gradient"]["min"] = self.mixed_value
                                             self.retInfo["mixed_values"].append(self.cell_new)
-        self.retInfo["gradient"]["averange"] = round((self.retInfo["gradient"]["min"] + self.retInfo["gradient"]["max"]) / 2, 3)
+        self.retInfo["gradient"]["averange"] = round((self.retInfo["gradient"]["min"] + self.retInfo["gradient"]["max"]) / 2, 1)
         return JsonResponse(OrderedDict(self.retInfo))
