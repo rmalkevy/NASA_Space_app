@@ -38,6 +38,7 @@ module.exports = {
   */
   plugins: [
     '@/plugins/vuetify',
+    '@/plugins/heatmap'
   ],
 
   /*
