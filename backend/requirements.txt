@@ -3,7 +3,3 @@ psycopg2-binary
 requests
 django-cors-headers
 python-dateutil
-cython
-numpy
-matplotlib
-pandas
