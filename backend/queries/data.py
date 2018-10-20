@@ -15,7 +15,7 @@ class getData(View):
         self.ferum = list()
         self.retInfo = {}
         self.retInfo["mixed_values"] = list()
-        self.cell = {"longtitude": "", "latitude": "", "value": ""}
+        self.cell = {"latitude": "", "longtitude": "", "value": ""}
         self.max_chlorine = 0.797
         self.max_water = 7.398
         self.max_pottasium = 0.561
@@ -35,8 +35,8 @@ class getData(View):
             for member in list_data:
                 if (member[2] != '9999.999'):
                     self.cell_chlorine = copy.deepcopy(self.cell)
-                    self.cell_chlorine["longtitude"] = member[0]
-                    self.cell_chlorine["latitude"] = member[1]
+                    self.cell_chlorine["longtitude"] = member[1]
+                    self.cell_chlorine["latitude"] = member[0]
                     self.cell_chlorine["value"] = (float(member[2]) / self.max_chlorine) * self.koef_chlorine
                     self.chlorine.append(self.cell_chlorine)
         if 'water' in request.GET:
@@ -52,8 +52,8 @@ class getData(View):
             for member in list_data:
                 if (member[2] != '9999.999'):
                     self.cell_water = copy.deepcopy(self.cell)
-                    self.cell_water["longtitude"] = member[0]
-                    self.cell_water["latitude"] = member[1]
+                    self.cell_water["longtitude"] = member[1]
+                    self.cell_water["latitude"] = member[0]
                     self.cell_water["value"] = (float(member[2]) / self.max_water) * self.koef_water
                     self.water.append(self.cell_water)
         if 'pottasium' in request.GET:
@@ -69,8 +69,8 @@ class getData(View):
             for member in list_data:
                 if (member[2] != '9999.999'):
                     self.cell_pottasium = copy.deepcopy(self.cell)
-                    self.cell_pottasium["longtitude"] = member[0]
-                    self.cell_pottasium["latitude"] = member[1]
+                    self.cell_pottasium["longtitude"] = member[1]
+                    self.cell_pottasium["latitude"] = member[0]
                     self.cell_pottasium["value"] = (float(member[2]) / self.max_pottasium) * self.koef_pottasium
                     self.pottasium.append(self.cell_pottasium)
         if 'silicon' in request.GET:
@@ -86,8 +86,8 @@ class getData(View):
             for member in list_data:
                 if (member[2] != '9999.999'):
                     self.cell_silicon = copy.deepcopy(self.cell)
-                    self.cell_silicon["longtitude"] = member[0]
-                    self.cell_silicon["latitude"] = member[1]
+                    self.cell_silicon["longtitude"] = member[1]
+                    self.cell_silicon["latitude"] = member[0]
                     self.cell_silicon["value"] = (float(member[2]) / self.max_silicon) * self.koef_silicon
                     self.silicon.append(self.cell_silicon)
         if 'ferum' in request.GET:
@@ -103,8 +103,8 @@ class getData(View):
             for member in list_data:
                 if (member[2] != '9999.999'):
                     self.cell_ferum = copy.deepcopy(self.cell)
-                    self.cell_ferum["longtitude"] = member[0]
-                    self.cell_ferum["latitude"] = member[1]
+                    self.cell_ferum["longtitude"] = member[1]
+                    self.cell_ferum["latitude"] = member[0]
                     self.cell_ferum["value"] = (float(member[2]) / self.max_ferum) * self.koef_ferum
                     self.ferum.append(self.cell_ferum)
         for chlorine in self.chlorine:
