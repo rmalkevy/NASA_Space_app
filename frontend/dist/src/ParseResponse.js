@@ -12,7 +12,6 @@ function parseResponse(response) {
             value = data[i].value * 500;
         }
         points.push([parseFloat(data[i].latitude), parseFloat(data[i].longtitude), value.toString()]);
-        console.log('value' + data[i].value);
     }
     return { gradient: gradient, points: points};
 }

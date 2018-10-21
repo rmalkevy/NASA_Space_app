@@ -1,17 +1,31 @@
-let link_to_backend = 'http://localhost:8000/queries/getData/?chlorine=0.2&water=0.4&pottasium=0.2&silicon=0.1&ferum=0.1';
-// let link_to_backend = 'http://localhost:8000/queries/getData/?chlorine=1&water=0&pottasium=0&silicon=0&ferum=0';
+let link_to_backend = 'http://localhost:8000/queries/getData/?';
 
-let getDataOptions = {
-    method: 'get',
-    url: link_to_backend
-};
 
 async function makeRequest() {
-    try {
-        let response = await axios(getDataOptions);
-        return response;
+    let water = parseFloat(document.getElementById('inputWater').value);
+    let chlorine = parseFloat(document.getElementById('inputChlorine').value);
+    let potassium = parseFloat(document.getElementById('inputPotassium').value);
+    let silicon = parseFloat(document.getElementById('inputSilicon').value);
+    let iron = parseFloat(document.getElementById('inputIron').value);
+    let sumOfAllElements = (water + chlorine + potassium + silicon + iron).toFixed(2);
+    alert(sumOfAllElements)
+    let link = link_to_backend + "water="+water+"&chlorine="+chlorine+"&pottasium="+potassium+"&silicon="+silicon+"&ferum="+iron;
+
+    let getDataOptions = {
+        method: 'get',
+        url: link
+    };
+
+    if (parseInt(sumOfAllElements) === 1) {
+        try {
+            let response = await axios(getDataOptions);
+            return response;
+        }
+        catch (e) {
+            throw e;
+        }
+    } else {
+        return null
     }
-    catch (e) {
-        throw e;
-    }
+
 }
