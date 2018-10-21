@@ -32,27 +32,27 @@
 
             <div class="form-group">
                 <label for="inputWater">Water</label>
-                <input type="number" step="0.1" class="form-control" id="inputWater" placeholder="e.g. 0.4">
+                <input type="number" step="0.1" value="0" class="form-control" id="inputWater" placeholder="e.g. 0.4">
             </div>
 
             <div class="form-group">
                 <label for="inputChlorine">Chlorine</label>
-                <input type="number" step="0.1" class="form-control" id="inputChlorine" placeholder="e.g. 0.3">
+                <input type="number" step="0.1" value="0" class="form-control" id="inputChlorine" placeholder="e.g. 0.3">
             </div>
 
             <div class="form-group">
                 <label for="inputPotassium">Potassium</label>
-                <input type="number" step="0.1" class="form-control" id="inputPotassium" placeholder="e.g. 0.2">
+                <input type="number" step="0.1" value="0" class="form-control" id="inputPotassium" placeholder="e.g. 0.2">
             </div>
 
             <div class="form-group">
                 <label for="inputSilicon">Silicon</label>
-                <input type="number" step="0.1" class="form-control" id="inputSilicon" placeholder="e.g. 0.08">
+                <input type="number" step="0.1" value="0" class="form-control" id="inputSilicon" placeholder="e.g. 0.08">
             </div>
 
             <div class="form-group">
-                <label for="inputIron">Potassium</label>
-                <input type="number" step="0.1" class="form-control" id="inputIron" placeholder="e.g. 0.02">
+                <label for="inputIron">Iron</label>
+                <input type="number" step="0.1" value="0" class="form-control" id="inputIron" placeholder="e.g. 0.02">
             </div>
 
 
@@ -107,7 +107,7 @@
 
         };
         if (heat) {
-            L.redraw();
+            map.removeLayer(heat);
             heat = await L.heatLayer(result.points, options).addTo(map);
         } else {
             heat = await L.heatLayer(result.points, options).addTo(map);
